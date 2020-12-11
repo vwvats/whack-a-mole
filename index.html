@@ -73,6 +73,7 @@
     }
 
     function bonk(e) {
+      // only user clicks will score points
       if(!e.isTrusted) return;
       score++;
       this.parentNode.classList.remove('up');
